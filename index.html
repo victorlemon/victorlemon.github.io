@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <!-- <link rel="stylesheet" href="css/style1.css"> -->
+    <style>
+            @font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?jj675t');
+    src:  url('fonts/icomoon.eot?jj675t#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?jj675t') format('truetype'),
+      url('fonts/icomoon.woff?jj675t') format('woff'),
+      url('fonts/icomoon.svg?jj675t#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+            }
+
+        body{
+ 
+            max-width: 540px;
+            min-width: 320px;
+            margin: 0 auto;
+            font: normal 16px/1.5 PingFangSC-regular,Tahoma,Lucida Grande,Verdana,Microsoft Yahei,STXihei,hei;
+            color: #000;
+            background-color: #f0f7fa;
+            /* overflow: hidden; */
+            -webkit-tab-highlight-color:transparent;
+            height: auto;
+
+           
+        }
+        .search_top {
+           position: relative;
+            display: flex;
+            height: 35px;
+         
+            padding: 10px 0px 10px 0px;
+           
+            background-color: #dcf4f9;
+ 
+        }
+        .search_top .search_input{
+            position: absolute;
+            height: 32px;
+            width: 100%;
+         
+            border-radius: 20px;
+            
+          
+            box-sizing: border-box;
+        }
+        .search_top .search_input input{
+            position: absolute;
+            left: 15px;
+            border-radius: 20px;
+            width: 90%;
+            height: 28px;
+            padding: 0 10 0 0;
+           
+           
+            border-color: #0086f6;
+        }
+        .search_top .search_input  span{
+          position: absolute;
+          right: 36px;
+          top: 3px;
+         font-family: 'icomoon';
+         display: flex;
+        
+       
+         font-size: 18px;
+         color: pink;
+         z-index: 5;
+        }
+        .banner_list{
+            position: relative;
+        
+        padding: 0;margin: 0;
+     
+         height: 95px;
+        }
+        .banner_list ul{
+          
+         display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          list-style: none;
+          margin-top: 10px;
+          padding: 0;
+          margin-bottom: 0;
+           
+        }
+        .banner_list ul li{
+           
+          width: 44px;
+         
+          height: 44px;
+          margin:5px;
+         
+          margin-top: 10px;
+          background-color: skyblue;
+          border-radius: 15px;
+        }
+        /* 添加背景图片，并设置背景图大小 不重复，居中 背景颜色 */
+        .banner_list ul a:nth-child(1) li{
+            background: url(./images/car.png) no-repeat center;
+            background-size: 33px auto;
+            background-color: #02bee3;
+        }
+        .banner_list ul a:nth-child(2) li{
+            background: url(./images/flight.png) no-repeat center;
+            background-size: 33px auto;
+            background-color: #02bee3;
+        }
+        .banner_list ul a:nth-child(3) li{
+            background: url(./images/flight_package.png) no-repeat center;
+            background-size: 33px auto;
+            background-color: #02bee3;
+        }
+        .banner_list ul a:nth-child(4) li{
+            background: url(./images/bus_ticket.png) no-repeat center;
+            background-size: 33px auto;
+            background-color: #02bee3;
+        }
+        .banner_list ul a:nth-child(5) li{
+            background: url(./images/hotel_inn.png) no-repeat center;
+            background-size: 33px auto;
+            background-color: #02bee3;
+        }
+        /* .banner_list .a{
+            position: absolute;
+            top: 57px;
+            left: 17px;
+            font-size: 14px;
+            color: rgba(13, 19, 20, 1);
+        } */
+
+        /* 2222222222222222222 */
+        .banner_list{
+       
+       padding: 0;margin: 0;
+        background-color: #f0f7fa;
+       
+       }
+       /* 弹性布局的运用
+           把父元素display设置为flex
+           选择justify-content
+           会均匀排列每个子元素
+           在每个元素周围分配相同的空间00 */
+      
+       .banner_list .spann{
+          display: flex;
+          justify-content: space-around;
+       }
+      .banner_con{
+       position: relative;
+       margin: 0 auto;
+       display: flex;
+       background-color: #fff;
+       width: 100%;
+       height: 335px;
+       border-radius: 5px;
+      }
+      .banner_con .box span:nth-child(1){
+       position: absolute;
+       top: 8px;
+       left: 28px;
+       font-size: 18px;
+       font-weight: 700;
+   
+      }
+      .banner_con .box span:nth-child(2){
+       position: absolute;
+       top: 12px;
+       left: 114px;
+       font-size: 14px;
+       color: #adb0b0;
+       
+   
+      }
+      .banner_con .banner_con_items ul{
+    
+       text-decoration: none;
+       list-style: none;
+       width: 100%;
+       padding-left: 0px;
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       background-color: #f0f7fa;
+       margin-top: 40px;
+       margin-bottom: 0px;
+    
+   
+      }
+      /*  */
+      .banner_con .banner_con_items ul a:active {
+       background-color: transparent; /* 设置透明背景颜色 */
+}
+
+
+      .banner_con .banner_con_items ul a:hover {
+       transform: translateY(-5px); /* 鼠标悬停时向上移动 5px */
+}
+      /*  */
+      .banner_con .banner_con_items ul a {
+        background: url(./images/55.png) no-repeat right top;
+        background-size: 50px auto;
+        transition: transform 0.2s ease-in-out; /* 添加动画过渡效果 */
+      
+
+        
+       
+    
+    
+       width: 28%;
+       height: 88px;
+       background-color: skyblue;
+       margin: 5px;
+       list-style: none;
+       border-radius: 10px;
+      }
+      .banner_con .banner_con_items .banner_con_span{
+        width: 100%;
+       display: flex;
+     justify-content: space-around;
+      
+       font-size: 13px;
+      }
+      .banner_con .banner_con_items .banner_con_span span{
+    width: 28%;
+       margin: 3px;
+       margin-top: 0;
+      }
+      /* .banner_con .banner_con_items ul a:nth-child(6){
+       margin-right: 0;
+      } */
+      .banner_con .banner_con_items ul:nth-child(2){
+       margin-top: 0px;
+      }
+   
+      /* 热门好歌区域开始 */
+   .footbanner{
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       height: 300px;
+       width: 100%;
+       background-color: #fff;
+   
+      }
+      .footbanner .box2 span{
+       position: absolute;
+       left: 28px;
+       font-size: 18px;
+       font-weight: 700;
+      margin: 5px;
+      }
+      .footbanner .footlist {
+       height: 300px;
+    
+      }
+      .footbanner .footlist ul{
+       list-style: none;
+       padding: 0;margin: 0;
+       margin-top: 37px;
+   
+   
+      }
+      .footbanner .footlist ul li{
+        display: flex;
+        justify-content: start;
+
+       height: 83px;
+       width: 100%;
+       /* background-color: skyblue; */
+      }
+      .footbanner .footlist ul li .liimg{
+      margin: 12px;
+       border-radius: 10px;
+       width: 20%;
+       height: 68px;
+   
+       background: url(./images/3.png) no-repeat center;
+       background-size: cover;
+      }
+      .footbanner .footlist ul li:nth-child(2) .liimg{
+       background: url(./images/2.png) no-repeat center;
+       background-size: cover;
+      }
+      .footbanner .footlist ul li:nth-child(3) .liimg{
+       background: url(./images/0.jpg) no-repeat center;
+       background-size: cover;
+      }
+      .footlist  li .footspan .foot-span-2{
+        font-size: 14px;
+       color: #9fa3a3;
+      
+      }
+      .footbanner .footlist ul li .footspan{
+        margin-top:10px ;
+       width: 70%;
+      }
+      .footbanner .footlist ul li .footspan span:nth-child(1){
+      
+       font-size: 18px;
+       font-weight: 700;
+     
+      }
+
+ 
+
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="container8888">
+        <!-- 搜索头部开始 -->
+        <div class="search_top">
+         <div class="search_input">
+            <span> </span>
+            <input type="text" placeholder="请输入想听的歌曲">
+            
+           
+        </div>
+        </div>
+        <!-- 结束 -->
+        <!-- 推荐导航开始 -->
+        <div class="banner_list">
+            <ul>
+                <a href="https://victorlemon.github.io/#/">
+                    <li>
+                    
+                     </li>
+                </a>
+                <a href="https://victorlemon.github.io/#/">
+                    <li>
+                    
+                     </li>
+                </a>
+                <a href="https://victorlemon.github.io/#/">
+                    <li>
+                    
+                     </li>
+                </a>
+                <a href="https://victorlemon.github.io/#/">
+                    <li>
+                    
+                     </li>
+                </a>
+                <a href="https://victorlemon.github.io/#/">
+                    <li>
+                    
+                     </li>
+                </a>
+              
+                
+                
+               
+            </ul>
+            <div class="spann">
+                <span>推荐</span>
+                <span>每日歌单</span>
+                <span>歌手</span>
+                <span>排行榜</span>
+                <span>一起听</span>
+            </div>
+           
+         
+        </div>
+        <!-- 结束 -->
+        <!-- 专属歌单中部区域开始 -->
+        <div class="banner_con">
+            <div class="box">
+                <span>专属歌单</span>
+                <span>根据《诺梦》推荐</span>
+            </div>
+           
+            <div class="banner_con_items">
+                <ul>
+                    <a href="">
+                        <li></li>
+                    </a>
+                    <a href="">
+                        <li></li>
+                    </a>
+                    <a href="">
+                        <li></li>
+                    </a>
+
+                    <div class="banner_con_span">
+                        <span>每个人的青春都有一个周杰伦</span>
+                        <span>治愈歌曲 |沉溺氛围感</span>
+                        <span>好听节奏感强的歌曲</span>
+                    </div>
+                 
+                </ul>
+                <ul>
+                    <a href="">
+                        <li></li>
+                    </a>
+                    <a href="">
+                        <li></li>
+                    </a>
+                    <a href="">
+                        <li></li>
+                    </a>
+
+                    <div class="banner_con_span">
+                        <span>小众民谣小集合酒馆氛围</span>
+                        <span>抖音超火的影视剧OST</span>
+                        <span>欧美R&B：体验不一样的感觉</span>
+                    </div>
+                 
+                </ul>
+            </div>
+            
+        </div>
+        <!-- 结束 -->
+        <!-- 热门好歌区域开始 -->
+        <div class="footbanner">
+            <div class="box2">
+                <span>热门好歌推荐</span>
+            </div>
+            <div class="footlist">
+                <ul>
+                    <li>
+                        <div class="liimg">
+                        </div>
+
+                        <div class="footspan">
+                            <span>怎么了</span><br>
+                            <span class="foot-span-2">周兴哲 - 终于了解自由</span>
+                        </div>
+                      
+
+                    </li>
+                    <li>  <div class="liimg">
+                        </div>
+                        
+                        <div class="footspan">
+                            <span>黄昏</span><br>
+                            <span class="foot-span-2">周传雄 - 黄昏</span>
+                        </div></li>
+                    <li>
+                        <div class="liimg">
+                        </div>
+                        
+                        <div class="footspan">
+                            <span>能不能给我一首歌的时间</span><br>
+                            <span class="foot-span-2">周杰伦·魔杰座</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function aop(){
+            console.log(1)
+        }
+    </script>
+    
+</body>
+</html>
