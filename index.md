@@ -11,7 +11,7 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: View on GitHub
-      link: https://github.com/yourusername/yourrepo
+      link: https://github.com/victorlemon/victorlemon.github.io
 
 features:
   - title: ⚡️ Lightning Fast
