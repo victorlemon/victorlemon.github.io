@@ -2,13 +2,13 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/',
-  title: 'My Documentation',
-  description: 'A documentation site built with VitePress',
+  title: '哈密瓜文档',
+  description: '个人技术文档 · 知识沉淀 · 快速检索',
   
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/getting-started' }
+      { text: '首页', link: '/' },
+      { text: '指南', link: '/guide/getting-started' }
     ],
 
     sidebar: [
