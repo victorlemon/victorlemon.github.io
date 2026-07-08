@@ -24,12 +24,6 @@
 
 183.232.58.146
 
-![image-20260701161655748](C:\Users\Lemon\AppData\Roaming\Typora\typora-user-images\image-20260701161655748.png)
-
-![image-20260702091527191](C:\Users\Lemon\AppData\Roaming\Typora\typora-user-images\image-20260702091527191.png)
-
-![image-20260702092046208](C:\Users\Lemon\AppData\Roaming\Typora\typora-user-images\image-20260702092046208.png)
-
 
 
 
